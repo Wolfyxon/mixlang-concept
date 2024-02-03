@@ -9,3 +9,4 @@ const thread = spawn(func() {
     print("Thread finished")
 })
 
+waitUntil(!thread.active) // this will pause execution and wait for the thread to finish
