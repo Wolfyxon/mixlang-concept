@@ -1,0 +1,12 @@
+// Will output "Hello World" in another line of the console
+print("Hello World")
+
+// Will print the "!" character without jumping to the next line 
+printc("!")
+
+
+/* Output of the program would be:
+
+Hello World!
+
+*/

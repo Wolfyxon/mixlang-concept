@@ -1,0 +1,43 @@
+func anyFunction() {
+    // This function has no enforced return type and can
+    return "values of any type, or none at all"
+}
+
+void doesntReturn() {
+    // This function has enforced void type, using 'return' will throw an error
+}
+
+<String, int> stringOrInt() {
+    // This function may only return String or int values
+
+    randRun {
+        50% {
+            return "Example string"
+        }
+        50% {
+           return randInt(1, 10) // return a random int from 1-10 
+        }
+    }
+}
+
+void exampleFunctionWithArguments(a, b) {
+    // arguments a and b have no enforced type so they can receive any value
+}
+
+// This function will add 2 numbers. Int-s are automatically converted to num-s. Num is a equivalent to 'float'
+// a and b can only take 'num' as a value.
+num sum(num a, num b) {
+    return a + b
+}
+
+sum(2, 2) // 4
+sum(1.0, 2) // 3
+sum(1.5, 1) // 2.5
+
+// This function can be used to add numbers and strings
+<num, String> add(<num, String> a, <num, String> b) {
+    return a + b
+}
+
+add(5, 5) // 10
+add("foo", "bar") // "foobar"
