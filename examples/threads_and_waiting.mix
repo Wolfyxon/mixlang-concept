@@ -4,9 +4,9 @@ print(`Waiting {time} seconds`)
 wait(time) // the execution will pause for the specified amount of time
 
 // Another thread will be created, using wait() inside of it won't cause the main program to freeze
-const thread = spawn(func() {
+const thread = spawn(func()
     wait(5)
     print("Thread finished")
-})
+end)
 
 waitUntil(!thread.active) // this will pause execution and wait for the thread to finish
