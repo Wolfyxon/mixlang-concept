@@ -7,4 +7,4 @@ Specifically I want to combine:
 - Simplicity and threading of **Lua**
 - Utilities of **GDScript**
 
-anto a 1 perfect language with my extra additions.
+into a 1 perfect language with my extra additions.
