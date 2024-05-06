@@ -7,7 +7,7 @@ void doesntReturn()
     // This function has enforced void type, using 'return' will throw an error
 end
 
-<String, int> stringOrInt()
+<String | int> stringOrInt()
     // This function may only return String or int values
 
     randRun
@@ -36,7 +36,7 @@ sum(1.0, 2) // 3
 sum(1.5, 1) // 2.5
 
 // This function can be used to add numbers and strings
-<num, String> add(<num, String> a, <num, String> b)
+<num, String> add(<num | String> a, <num | String> b)
     return a + b
 end
 
