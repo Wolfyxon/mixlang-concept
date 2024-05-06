@@ -1,0 +1,86 @@
+// OOP (Object Oriented Programming) example
+
+class Organism
+
+    // Class properties
+    public num health = 10 
+    public String name = "?"
+
+    public const organismName = "unknown organism"
+
+    // Constructors
+    Organism()
+        print("Hi, I don't have a name")
+    end
+
+    Organism(String name)
+        print(`Hi! Hmm... ${name} is a nice name!`)
+        
+        // 'name' already exists in this scope so we have to use 'self'
+        self.name = name
+    end
+
+    // Functions
+    public void damage(num amount)
+        print("ow")
+        health -= amount
+        
+        if health <= 0
+            die()
+        end
+
+    end
+
+    void die()
+        health = 0
+    end
+
+end
+
+class Human
+    extends Organism
+
+    // 'organismName' will be overriden, even if it's a const
+    public const String organismName = "human"
+
+    public String getQuote()
+        return "I think therefore I am"
+    end
+
+    void die()
+        print("Goodbye cruel world")
+
+        // 'super' is the lower instance of the class, in this case 'Organism'
+        // In this case, calling the die() function would first print "Goodbye cruel world" then execute die() in Organism, setting 'health' to 0
+
+        super.die()
+    end
+
+end
+
+class Nerd 
+    extends Human
+
+    // Override the Organism constructor
+    Nerd()
+        print("Hello, would you like to talk about open source?")
+    end
+
+    // Override the Human 'getQuote' function
+    public String getQuote()
+        return "btw i use arch"
+    end
+
+    public void writeCode()
+        print("I refuse. I'm not gonna use the Lua-like abomination.")
+    end
+
+end
+
+// Create instances of the classes defined above and call getQuote() on them
+
+const human = Human()
+print( human.getQuote() ) // I think therefore I am
+
+const nerd = Nerd()
+print( nerd.getQuote() ) // btw i use arch
