@@ -1,0 +1,22 @@
+
+var variableName = "This variable can store anything"
+variableName += " and can be always updated"
+
+print(variableName) // This variable can store anything and can always be updated
+
+num onlyNumbers = 4
+onlyNumbers += 2
+
+print(onlyNumbers) // 6
+
+const constant = "You can't update me!"
+const String typedConstant = "You can't update me but I look better because I have a user-defined type "
+
+// 'final' variables cannot be modified after their value is set
+final String username
+username = "XxCoolGamer2137xX"
+
+print(username, "guys, how do I change my username?")
+
+<num | String> numberOrString = "I can store strings and numbers"
+numberOrString = 123
