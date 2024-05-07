@@ -3,10 +3,10 @@
 class Organism
 
     // Class properties
-    public num health = 10 
-    public String name = "?"
+    pub num health = 10 
+    pub String name = "?"
 
-    public const organismName = "unknown organism"
+    pub const organismName = "unknown organism"
 
     // Constructors
     Organism()
@@ -21,7 +21,7 @@ class Organism
     end
 
     // Functions
-    public void damage(num amount)
+    pub void damage(num amount)
         print("ow")
         health -= amount
         
@@ -41,9 +41,9 @@ class Human
     extends Organism
 
     // 'organismName' will be overriden, even if it's a const
-    public const String organismName = "human"
+    pub const String organismName = "human"
 
-    public String getQuote()
+    pub String getQuote()
         return "I think therefore I am"
     end
 
@@ -67,11 +67,11 @@ class Nerd
     end
 
     // Override the Human 'getQuote' function
-    public String getQuote()
+    pub String getQuote()
         return "btw i use arch"
     end
 
-    public void writeCode()
+    pub void writeCode()
         print("I refuse. I'm not gonna use the Lua-like abomination.")
     end
 

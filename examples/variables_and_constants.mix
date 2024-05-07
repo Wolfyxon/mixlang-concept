@@ -28,7 +28,7 @@ class CoolClass
         print("Cool class was created")
     end
 
-    public void hi()
+    pub void hi()
         print("Hello")
     end
 
