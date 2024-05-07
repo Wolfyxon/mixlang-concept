@@ -80,6 +80,30 @@ class Nerd
 
 end
 
+class MathUtils
+
+    // Static functions can be accessed directly on the class without creating an object, to save memory
+    // Same with constants
+
+    pub const num PI = 3.14159265359
+
+    pub static num sum(num a, num b)
+        return a + b
+    end
+
+    pub static num subtract(num a, num b)
+        return a - b
+    end
+
+end
+
+// Access static functions and constant properties
+
+print("PI is equal to", MathUtils.PI) // PI is equal to 3.14159265359
+
+print( MathUtils.add(2, 2) ) // 4
+print( MathUtils.subtract(5, 3) ) // 2
+
 // Create instances of the classes defined above and call getQuote() on them
 
 const human = Human()
