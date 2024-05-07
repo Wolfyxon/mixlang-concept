@@ -4,7 +4,7 @@ func anyFunction()
 end
 
 void doesntReturn()
-    // This function has enforced void type, using 'return' will throw an error
+    // This function has enforced void type, using 'return' with a value will throw an error
 end
 
 <String | int> stringOrInt()
