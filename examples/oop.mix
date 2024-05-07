@@ -21,6 +21,8 @@ class Organism
     end
 
     // Functions
+
+    // Functions with the 'pub' keyword are public and can be accessed through the class' object
     pub void damage(num amount)
         print("ow")
         health -= amount
@@ -31,6 +33,7 @@ class Organism
 
     end
 
+    // This function does not have 'pub' so it's not public. Calling it outside of the class would cause an error
     void die()
         health = 0
     end
