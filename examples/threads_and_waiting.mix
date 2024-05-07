@@ -1,5 +1,5 @@
 num time = 5
-print(`Waiting {time} seconds`)
+print(`Waiting ${time} seconds`)
 
 wait(time) // the execution will pause for the specified amount of time
 
