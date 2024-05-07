@@ -1,4 +1,4 @@
-use test_module.greet
+use test_module
 
 test_module.greet()
 test_module.farewell()
