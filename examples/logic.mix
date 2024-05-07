@@ -1,0 +1,38 @@
+
+if true
+    print("This will always execute")
+end
+
+bool enabled = false
+
+if enabled
+    print("Program is enabled")
+else
+    print("Program is disabled")
+end
+
+// Will check if 2+2 is equal to 4
+if 2 + 2 == 4
+    print("The universe is stable")
+else
+    print("The fabric of reality has shattered. We're all going to die")
+end
+
+
+void nameFunc()
+    String name = input("Enter your name: ")
+
+    if name.len() == 0 
+        print("Don't you have a name?")
+        return // Calling return halts the function
+    end
+
+    if name.len() > 100
+        print("Your name is too long, are you sure it's real?")
+        return
+    end
+
+    print(`Hello ${name}! Nice to meet you!`)
+end
+
+nameFunc()
