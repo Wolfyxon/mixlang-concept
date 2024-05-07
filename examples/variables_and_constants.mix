@@ -20,3 +20,19 @@ print(username, "guys, how do I change my username?")
 
 <num | String> numberOrString = "I can store strings and numbers"
 numberOrString = 123
+
+
+class CoolClass
+    
+    CoolClass()
+        print("Cool class was created")
+    end
+
+    public void hi()
+        print("Hello")
+    end
+
+end
+
+CoolClass coolObject = CoolClass()
+coolObject.hi()
