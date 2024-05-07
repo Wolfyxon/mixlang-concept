@@ -1,0 +1,4 @@
+use test_module.[greet, farewell]
+
+greet()
+farewell()

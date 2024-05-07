@@ -1,0 +1,20 @@
+
+const String[] greetings = [
+    "Hello",
+    "Hi",
+    "Welcome"
+]
+
+const String[] farewells = [
+    "Bye",
+    "Goodbye",
+    "See ya"
+]
+
+pub static greet()
+    print( greetings.random() )
+end
+
+pub static farewell()
+    print( farewells.random() )
+end

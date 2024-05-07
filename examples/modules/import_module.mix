@@ -1,0 +1,4 @@
+use test_module.greet
+
+test_module.greet()
+test_module.farewell()
