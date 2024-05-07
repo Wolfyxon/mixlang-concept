@@ -10,7 +10,7 @@ end
 <String | int> stringOrInt()
     // This function may only return String or int values
 
-    randRun
+    pick
         50%
             return "Example string"
         end
